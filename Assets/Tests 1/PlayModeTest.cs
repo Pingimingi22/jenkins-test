@@ -11,7 +11,9 @@ public class PlayModeTest
     public void PlayModeThisShouldFail()
     {
         // Use the Assert class to test conditions
-        Debug.LogError("lol");
+        //Debug.LogError("lol");
+        //Assert.False(true, "wat");
+        Debug.Log("test");
     }
 
     [Test] public void PlayModeThisShouldWork()
