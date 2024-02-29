@@ -8,10 +8,15 @@ public class PlayModeTest
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void PlayModeTestSimplePasses()
+    public void PlayModeThisShouldFail()
     {
         // Use the Assert class to test conditions
         Debug.LogError("lol");
+    }
+
+    [Test] public void PlayModeThisShouldWork()
+    {
+        Debug.Log("it works");
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
